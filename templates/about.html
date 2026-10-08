@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block page_title %}About the Project{% endblock %}
+
+{% block content %}
+<div class="panel">
+    <h2 class="panel-title">Future Interest Analysis in Twitter Users Using Data Mining</h2>
+    <p class="panel-subtitle">A college Data Mining / Machine Learning mini-project.</p>
+
+    <h3 class="panel-title-sm mt-4">Objective</h3>
+    <p>
+        Analyze a Twitter/X user's historical tweets to identify their current interests and
+        predict likely future interests, using Natural Language Processing and Machine Learning
+        classification, then present the findings through an interactive web dashboard.
+    </p>
+
+    <h3 class="panel-title-sm mt-4">Data Mining Pipeline Demonstrated</h3>
+    <ol class="pipeline-list">
+        <li>Data Collection &mdash; CSV upload of historical tweets</li>
+        <li>Data Cleaning &amp; Preprocessing &mdash; lowercasing, URL/mention/emoji removal, stop-word removal</li>
+        <li>Tokenization &amp; Lemmatization &mdash; NLTK</li>
+        <li>Feature Extraction &mdash; TF-IDF vectorization</li>
+        <li>Classification &mdash; Logistic Regression, Na&iuml;ve Bayes, SVM</li>
+        <li>Model Evaluation &amp; Selection &mdash; Accuracy, Precision, Recall, F1-score</li>
+        <li>Pattern Identification &mdash; frequency &amp; recency analysis per user</li>
+        <li>Prediction &mdash; future interest &amp; emerging interest detection</li>
+        <li>Visualization &mdash; interactive Chart.js dashboards</li>
+    </ol>
+
+    <h3 class="panel-title-sm mt-4">Technology Stack</h3>
+    <div class="chip-row">
+        {% for tech in ["Python 3","Flask","Scikit-learn","NLTK","Pandas","NumPy","SQLite","Bootstrap 5","Chart.js","JavaScript"] %}
+        <span class="chip">{{ tech }}</span>
+        {% endfor %}
+    </div>
+
+    <h3 class="panel-title-sm mt-4">Ethical &amp; Responsible Use Notes</h3>
+    <ul class="ethics-list">
+        <li>Predictions are based on available historical data and are probabilistic estimates, not guarantees.</li>
+        <li>The included dataset is <strong>synthetic sample/demo data</strong>, not real scraped Twitter/X data.</li>
+        <li>User privacy should be protected; avoid collecting sensitive personal information unnecessarily.</li>
+        <li>Any real API integration must follow Twitter/X's platform policies and applicable data-protection laws.</li>
+        <li>This system should not be used for harmful profiling or discriminatory decision-making.</li>
+    </ul>
+
+    <h3 class="panel-title-sm mt-4">Future Enhancements</h3>
+    <div class="chip-row">
+        {% for item in ["Real-time Twitter/X API integration","BERT / RoBERTa NLP models","Deep learning classifiers","Multilingual support","Emotion detection","Real-time trend prediction","Advanced recommendation algorithms","Mobile application","Cloud deployment","Temporal prediction models"] %}
+        <span class="chip chip-muted">{{ item }}</span>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

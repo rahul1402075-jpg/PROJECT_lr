@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block page_title %}Dashboard Overview{% endblock %}
+
+{% block content %}
+{% if overview %}
+<div class="row g-3">
+    <div class="col-6 col-md-3">
+        <div class="stat-card">
+            <span class="stat-label">Total Tweets</span>
+            <span class="stat-value">{{ overview.total_tweets }}</span>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="stat-card">
+            <span class="stat-label">Total Users</span>
+            <span class="stat-value">{{ overview.total_users }}</span>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="stat-card">
+            <span class="stat-label">Top Category</span>
+            <span class="stat-value stat-value-sm">{{ overview.category_labels[0] if overview.category_labels else '—' }}</span>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="stat-card">
+            <span class="stat-label">Dominant Sentiment</span>
+            <span class="stat-value stat-value-sm">{{ overview.sentiment.dominant_sentiment }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mt-1">
+    <div class="col-lg-6">
+        <div class="panel chart-panel">
+            <h3 class="panel-title-sm">Interest Distribution (All Uploaded Tweets)</h3>
+            <canvas id="categoryPie"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="panel chart-panel">
+            <h3 class="panel-title-sm">Sentiment Distribution</h3>
+            <canvas id="sentimentDoughnut"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="panel chart-panel">
+            <h3 class="panel-title-sm">Top Keywords</h3>
+            <canvas id="keywordBar"></canvas>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="panel chart-panel">
+            <h3 class="panel-title-sm">Top Hashtags</h3>
+            <canvas id="hashtagBar"></canvas>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="panel"><p class="note-text">No data yet. Please upload a dataset first.</p></div>
+{% endif %}
+
+<div class="panel mt-4">
+    <h3 class="panel-title-sm">Try the Classifier</h3>
+    <p class="panel-subtitle">Type any tweet-like sentence and see which interest category the trained model predicts, live.</p>
+    <div class="quick-classify">
+        <input type="text" id="quickTweetInput" class="form-control" placeholder="e.g. I just finished a great workout at the gym today">
+        <button class="btn btn-accent" id="quickClassifyBtn">Classify</button>
+    </div>
+    <div id="quickClassifyResult" class="quick-result mt-3"></div>
+</div>
+
+<div class="panel mt-4">
+    <h3 class="panel-title-sm">Registered Users ({{ users|length }})</h3>
+    <div class="table-responsive">
+        <table class="table table-dark table-sm data-table">
+            <thead><tr><th>User ID</th><th>Username</th><th></th></tr></thead>
+            <tbody>
+            {% for u in users %}
+                <tr>
+                    <td>{{ u.user_id }}</td>
+                    <td>{{ u.username }}</td>
+                    <td><a href="{{ url_for('predict') }}?u={{ u.username }}" class="btn btn-sm btn-outline-light">Analyze</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+{% if overview %}
+const chartTextColor = '#c9d2e3';
+Chart.defaults.color = chartTextColor;
+Chart.defaults.font.family = "'Inter', sans-serif";
+
+new Chart(document.getElementById('categoryPie'), {
+    type: 'pie',
+    data: {
+        labels: {{ overview.category_labels | tojson }},
+        datasets: [{
+            data: {{ overview.category_values | tojson }},
+            backgroundColor: ['#4f7cff','#06b6d4','#f2994a','#a855f7','#22c55e','#f43f5e','#eab308','#3b82f6','#14b8a6','#f472b6']
+        }]
+    },
+    options: { plugins: { legend: { position: 'bottom' } } }
+});
+
+new Chart(document.getElementById('sentimentDoughnut'), {
+    type: 'doughnut',
+    data: {
+        labels: ['Positive','Negative','Neutral'],
+        datasets: [{
+            data: [{{ overview.sentiment.breakdown.Positive }}, {{ overview.sentiment.breakdown.Negative }}, {{ overview.sentiment.breakdown.Neutral }}],
+            backgroundColor: ['#22c55e','#f43f5e','#64748b']
+        }]
+    },
+    options: { plugins: { legend: { position: 'bottom' } } }
+});
+
+new Chart(document.getElementById('keywordBar'), {
+    type: 'bar',
+    data: {
+        labels: {{ overview.top_keywords | map(attribute=0) | list | tojson }},
+        datasets: [{
+            label: 'Frequency',
+            data: {{ overview.top_keywords | map(attribute=1) | list | tojson }},
+            backgroundColor: '#4f7cff'
+        }]
+    },
+    options: { indexAxis: 'y', plugins: { legend: { display: false } } }
+});
+
+new Chart(document.getElementById('hashtagBar'), {
+    type: 'bar',
+    data: {
+        labels: {{ overview.top_hashtags | map(attribute=0) | list | tojson }},
+        datasets: [{
+            label: 'Occurrences',
+            data: {{ overview.top_hashtags | map(attribute=1) | list | tojson }},
+            backgroundColor: '#06b6d4'
+        }]
+    },
+    options: { indexAxis: 'y', plugins: { legend: { display: false } } }
+});
+{% endif %}
+
+document.getElementById('quickClassifyBtn').addEventListener('click', async function(){
+    const text = document.getElementById('quickTweetInput').value;
+    const resultBox = document.getElementById('quickClassifyResult');
+    if (!text.trim()) { resultBox.innerHTML = '<span class="text-warning">Please type something first.</span>'; return; }
+    resultBox.innerHTML = '<span class="text-muted">Classifying...</span>';
+    try {
+        const res = await fetch("{{ url_for('api_classify_tweet') }}", {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({tweet: text})
+        });
+        const data = await res.json();
+        if (data.error) {
+            resultBox.innerHTML = `<span class="text-danger">${data.error}</span>`;
+        } else {
+            resultBox.innerHTML = `Predicted category: <span class="chip">${data.category}</span> &middot; Confidence: <strong>${data.confidence}%</strong>`;
+        }
+    } catch(e) {
+        resultBox.innerHTML = '<span class="text-danger">Something went wrong.</span>';
+    }
+});
+</script>
+{% endblock %}

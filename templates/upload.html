@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Upload Dataset{% endblock %}
+{% block page_title %}Dataset Upload{% endblock %}
+
+{% block content %}
+<div class="panel">
+    <h2 class="panel-title">Upload Twitter/X Dataset (CSV)</h2>
+    <p class="panel-subtitle">
+        Upload a CSV file containing historical tweets. Required columns:
+        <code>user_id</code>, <code>username</code>, <code>tweet</code>, <code>category</code>.
+        Optional columns: <code>date</code>, <code>hashtags</code>, <code>likes</code>, <code>retweets</code>.
+    </p>
+
+    <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data" class="upload-form">
+        <div class="dropzone" id="dropzone">
+            <input type="file" name="dataset_file" id="fileInput" accept=".csv" required>
+            <div class="dropzone-text">
+                <strong>Click to choose a CSV file</strong>
+                <span>or drag and drop it here &middot; max 5 MB</span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-accent mt-3">Upload Dataset</button>
+    </form>
+
+    {% if dataset_exists %}
+    <div class="status-box mt-4">
+        <div><strong>Current dataset:</strong> dataset/twitter_dataset.csv</div>
+        {% if row_count %}<div><strong>Rows:</strong> {{ row_count }}</div>{% endif %}
+        <div><strong>Model status:</strong>
+            {% if model_trained %}
+                <span class="badge-status trained">Trained</span>
+            {% else %}
+                <span class="badge-status untrained">Not trained yet</span>
+            {% endif %}
+        </div>
+
+        <form action="{{ url_for('train') }}" method="POST" class="mt-3">
+            <button type="submit" class="btn btn-outline-light">
+                {{ 'Retrain Model' if model_trained else 'Train Model' }}
+            </button>
+        </form>
+    </div>
+    {% endif %}
+</div>
+
+<div class="panel mt-4">
+    <h3 class="panel-title-sm">Sample CSV Format</h3>
+    <div class="table-responsive">
+        <table class="table table-dark table-sm data-table">
+            <thead>
+                <tr>
+                    <th>user_id</th><th>username</th><th>tweet</th><th>date</th>
+                    <th>hashtags</th><th>likes</th><th>retweets</th><th>category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>U001</td><td>rahul_k</td>
+                    <td>Learning Python and Machine Learning these days</td>
+                    <td>2025-09-02</td><td>#AI #Python</td><td>114</td><td>39</td><td>Technology</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="note-text">
+        A ready-to-use <strong>sample/demo dataset</strong> (synthetic, not real Twitter data)
+        is already included at <code>dataset/twitter_dataset.csv</code> so you can train and
+        demo the project immediately.
+    </p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('fileInput').addEventListener('change', function(e){
+    const dz = document.getElementById('dropzone');
+    if (e.target.files.length > 0) {
+        dz.querySelector('.dropzone-text strong').textContent = e.target.files[0].name;
+    }
+});
+</script>
+{% endblock %}

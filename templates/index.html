@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block page_title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero-card">
+    <div class="hero-eyebrow"><span class="pulse-dot"></span> COLLEGE DATA MINING MINI-PROJECT</div>
+    <h1 class="hero-title">Future Interest Analysis<br>in Twitter Users</h1>
+    <p class="hero-subtitle">Predicting future user interests using NLP and Machine Learning</p>
+
+    <p class="hero-description">
+        This system studies a user's historical tweets, learns the topics they engage with most,
+        and projects where their attention is <em>likely</em> headed next &mdash; Technology today,
+        maybe Education tomorrow. It combines text cleaning, TF-IDF feature extraction, and three
+        classic classifiers (Logistic Regression, Na&iuml;ve Bayes, SVM) to turn raw tweets into a
+        clear, explainable interest profile.
+    </p>
+
+    <div class="hero-actions">
+        <a href="{{ url_for('upload') }}" class="btn btn-accent">Upload Dataset</a>
+        <a href="{{ url_for('predict') }}" class="btn btn-outline-light">Analyze a User</a>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-ghost">View Dashboard</a>
+    </div>
+</section>
+
+<section class="row g-4 mt-2">
+    <div class="col-md-4">
+        <div class="info-card">
+            <div class="info-icon">01</div>
+            <h3>Clean &amp; Understand</h3>
+            <p>Every tweet is lowercased, stripped of links/mentions/emojis, tokenized, and lemmatized
+            before it ever reaches a model.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="info-card">
+            <div class="info-icon">02</div>
+            <h3>Classify &amp; Compare</h3>
+            <p>Logistic Regression, Na&iuml;ve Bayes, and SVM are trained side-by-side; the
+            best F1-score wins and powers every prediction.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="info-card">
+            <div class="info-icon">03</div>
+            <h3>Project Forward</h3>
+            <p>Recent vs. older tweet activity is compared to surface a primary future interest
+            and a potential emerging one.</p>
+        </div>
+    </div>
+</section>
+
+<section class="category-strip mt-4">
+    <span class="category-strip-label">Interest categories tracked</span>
+    <div class="chip-row">
+        {% for cat in ["Technology","Sports","Entertainment","Politics","Business","Education","Health","Travel","Gaming","Finance"] %}
+        <span class="chip">{{ cat }}</span>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Model Performance{% endblock %}
+{% block page_title %}Model Performance &amp; Comparison{% endblock %}
+
+{% block content %}
+<div class="panel">
+    <h2 class="panel-title">Model Comparison</h2>
+    <p class="panel-subtitle">
+        All metrics below are calculated directly from the held-out test split
+        (20% of the cleaned dataset) &mdash; nothing is hard-coded.
+        Trained on {{ metrics.training_samples }} samples, tested on {{ metrics.testing_samples }} samples.
+    </p>
+
+    <div class="best-model-banner">
+        Best performing model: <strong>{{ metrics.best_model }}</strong>
+        (F1 Score: {{ metrics.models[metrics.best_model].f1_score }}%)
+    </div>
+
+    <div class="row g-4 mt-2">
+        {% for name, m in metrics.models.items() %}
+        <div class="col-md-4">
+            <div class="model-card {{ 'is-best' if name == metrics.best_model }}">
+                <h4>{{ name }} {% if name == metrics.best_model %}<span class="chip chip-emerging">Best</span>{% endif %}</h4>
+                <div class="metric-row"><span>Accuracy</span><strong>{{ m.accuracy }}%</strong></div>
+                <div class="metric-row"><span>Precision</span><strong>{{ m.precision }}%</strong></div>
+                <div class="metric-row"><span>Recall</span><strong>{{ m.recall }}%</strong></div>
+                <div class="metric-row"><span>F1 Score</span><strong>{{ m.f1_score }}%</strong></div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="panel mt-4 chart-panel">
+    <h3 class="panel-title-sm">Metric Comparison Chart</h3>
+    <canvas id="metricsChart"></canvas>
+</div>
+
+<div class="panel mt-4">
+    <h3 class="panel-title-sm">Confusion Matrix &mdash; {{ metrics.best_model }} (Best Model)</h3>
+    <div class="table-responsive">
+        <table class="table table-dark table-sm data-table confusion-table">
+            <thead>
+                <tr>
+                    <th>Actual \ Predicted</th>
+                    {% for label in metrics.models[metrics.best_model].labels %}<th>{{ label }}</th>{% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in metrics.models[metrics.best_model].confusion_matrix %}
+                <tr>
+                    <td><strong>{{ metrics.models[metrics.best_model].labels[loop.index0] }}</strong></td>
+                    {% for val in row %}<td>{{ val }}</td>{% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <p class="note-text">Rows = actual category, Columns = predicted category. Diagonal values are correct predictions.</p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+Chart.defaults.color = '#c9d2e3';
+Chart.defaults.font.family = "'Inter', sans-serif";
+
+const modelNames = {{ metrics.models.keys() | list | tojson }};
+const accuracy = {{ metrics.models.values() | map(attribute='accuracy') | list | tojson }};
+const precision = {{ metrics.models.values() | map(attribute='precision') | list | tojson }};
+const recall = {{ metrics.models.values() | map(attribute='recall') | list | tojson }};
+const f1 = {{ metrics.models.values() | map(attribute='f1_score') | list | tojson }};
+
+new Chart(document.getElementById('metricsChart'), {
+    type: 'bar',
+    data: {
+        labels: modelNames,
+        datasets: [
+            { label: 'Accuracy', data: accuracy, backgroundColor: '#4f7cff' },
+            { label: 'Precision', data: precision, backgroundColor: '#06b6d4' },
+            { label: 'Recall', data: recall, backgroundColor: '#f2994a' },
+            { label: 'F1 Score', data: f1, backgroundColor: '#a855f7' }
+        ]
+    },
+    options: { scales: { y: { beginAtZero: true, max: 100 } } }
+});
+</script>
+{% endblock %}

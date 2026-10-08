@@ -1,0 +1,301 @@
+user_id,username,tweet,date,hashtags,likes,retweets,category
+U001,rahul_k,Gold prices went up again this week,2025-06-01,#Savings #Investing,25,58,Finance
+U001,rahul_k,The debate between candidates was quite intense,2025-06-10,#Politics #Government,327,93,Politics
+U001,rahul_k,Blockchain technology has many real world use cases,2025-06-13,#Python #MachineLearning,313,43,Technology
+U001,rahul_k,Higher education is becoming more accessible online,2025-06-20,#Study #Exams,352,83,Education
+U001,rahul_k,The new policy announcement affects many citizens,2025-06-27,#Government #Politics,35,54,Politics
+U001,rahul_k,Career counseling sessions helped me choose my specialization,2025-07-04,#Exams #OnlineLearning,204,117,Education
+U001,rahul_k,Cloud computing with AWS makes deployment so easy,2025-07-10,#Python #MachineLearning,461,149,Technology
+U001,rahul_k,Data Science and Big Data are shaping the future,2025-07-13,#Python #Technology,388,12,Technology
+U001,rahul_k,The new curriculum focuses more on practical skills,2025-07-22,#Study #Education,197,119,Education
+U001,rahul_k,5G networks are enabling so many new mobile applications,2025-07-27,#AI #DataScience,395,87,Technology
+U001,rahul_k,Coding in Python every day is improving my skills,2025-07-31,#Python #Technology,490,67,Technology
+U001,rahul_k,That game update added so many new features,2025-08-07,#VideoGames #Esports,193,41,Gaming
+U001,rahul_k,The tech conference this year had some incredible keynote talks,2025-08-14,#DataScience #AI,252,4,Technology
+U001,rahul_k,Blockchain technology has many real world use cases,2025-08-18,#MachineLearning #Python,125,145,Technology
+U001,rahul_k,My thesis advisor gave really valuable feedback today,2025-08-25,#Education #OnlineLearning,339,121,Education
+U002,priya_sports,Regular checkups help in early diagnosis of diseases,2025-06-04,#MentalHealth #Wellness,212,119,Health
+U002,priya_sports,Physical therapy has really helped with my recovery,2025-06-10,#Health #Yoga,374,86,Health
+U002,priya_sports,Sleep quality really affects daily productivity,2025-06-14,#Fitness #MentalHealth,218,46,Health
+U002,priya_sports,The new stadium looks incredible for the match,2025-06-19,#Cricket #WorldCup,27,138,Sports
+U002,priya_sports,Local elections will be held next month,2025-06-28,#Politics #Vote,111,102,Politics
+U002,priya_sports,Eating healthy and exercising daily keeps me energetic,2025-07-04,#MentalHealth #Wellness,148,108,Health
+U002,priya_sports,I upgraded my setup with a mechanical keyboard for gaming,2025-07-08,#GamerLife #Esports,153,55,Gaming
+U002,priya_sports,Our community organized a free health checkup camp today,2025-07-13,#Health #Wellness,27,149,Health
+U002,priya_sports,That world record in swimming was absolutely incredible,2025-07-19,#Football #Cricket,437,47,Sports
+U002,priya_sports,That basketball game had an amazing last minute comeback,2025-07-25,#Football #WorldCup,484,145,Sports
+U002,priya_sports,I joined a local weekend cricket league this season,2025-08-03,#Cricket #Fitness,338,149,Sports
+U002,priya_sports,Our fantasy league team is doing really well,2025-08-08,#Sports #Football,124,67,Sports
+U002,priya_sports,The athlete's comeback after injury is truly inspiring,2025-08-14,#Sports #WorldCup,477,18,Sports
+U002,priya_sports,I joined a local weekend cricket league this season,2025-08-18,#Fitness #Cricket,277,54,Sports
+U002,priya_sports,Tennis grand slam season is my favorite time of year,2025-08-25,#Sports #Cricket,191,72,Sports
+U003,movie_buff_anu,The new tax filing portal is much easier to use,2025-06-02,#Investing #Crypto,23,78,Finance
+U003,movie_buff_anu,Blockchain technology has many real world use cases,2025-06-07,#Python #DataScience,183,143,Technology
+U003,movie_buff_anu,Speedrunning that classic game has become my new hobby,2025-06-14,#Esports #Streaming,411,45,Gaming
+U003,movie_buff_anu,The boss fight in that level took me three tries,2025-06-20,#VideoGames #GamerLife,138,40,Gaming
+U003,movie_buff_anu,I spent the whole weekend playing the new RPG,2025-06-26,#GamerLife #Esports,420,117,Gaming
+U003,movie_buff_anu,The trailer for the upcoming film looks fantastic,2025-07-02,#Music #Movies,206,84,Entertainment
+U003,movie_buff_anu,That concert last night had an incredible atmosphere,2025-07-10,#WebSeries #Netflix,349,137,Entertainment
+U003,movie_buff_anu,The new movie release this weekend looks amazing,2025-07-14,#Movies #WebSeries,299,67,Entertainment
+U003,movie_buff_anu,Red carpet fashion at the premiere looked stunning this year,2025-07-21,#Entertainment #WebSeries,225,130,Entertainment
+U003,movie_buff_anu,The animated movie was surprisingly emotional and well written,2025-07-25,#Music #WebSeries,364,111,Entertainment
+U003,movie_buff_anu,I pre-ordered tickets for the upcoming world tour,2025-08-03,#Music #WebSeries,37,84,Entertainment
+U003,movie_buff_anu,The remake of the classic film got mixed reviews,2025-08-08,#Movies #WebSeries,343,104,Entertainment
+U003,movie_buff_anu,I love discovering new artists on my music playlist,2025-08-13,#WebSeries #Music,217,97,Entertainment
+U003,movie_buff_anu,I love the new Netflix series everyone is talking about,2025-08-21,#Netflix #WebSeries,282,0,Entertainment
+U003,movie_buff_anu,That celebrity interview was really entertaining,2025-08-27,#Entertainment #WebSeries,228,113,Entertainment
+U004,dev_shivani,Venture capital funding in the region is increasing steadily,2025-06-04,#Market #Finance,315,129,Business
+U004,dev_shivani,Traveling on a budget can still be a great experience,2025-06-09,#Wanderlust #Adventure,386,63,Travel
+U004,dev_shivani,Remote work policies are reshaping corporate office culture,2025-06-14,#Market #Entrepreneur,142,112,Business
+U004,dev_shivani,The new laptop I bought has amazing specifications,2025-06-21,#Python #MachineLearning,165,138,Technology
+U004,dev_shivani,Cloud computing with AWS makes deployment so easy,2025-06-26,#Python #Technology,363,54,Technology
+U004,dev_shivani,Coding in Python every day is improving my skills,2025-07-04,#MachineLearning #Technology,33,52,Technology
+U004,dev_shivani,Remote work policies are reshaping corporate office culture,2025-07-10,#Market #Business,246,1,Business
+U004,dev_shivani,Corporate strategy meetings happen every Monday,2025-07-16,#Entrepreneur #Startup,114,69,Business
+U004,dev_shivani,I am learning Python and Machine Learning these days,2025-07-22,#Technology #MachineLearning,372,42,Technology
+U004,dev_shivani,The new tax filing portal is much easier to use,2025-07-25,#Finance #Crypto,44,109,Finance
+U004,dev_shivani,Quantum computing research is progressing rapidly,2025-08-02,#Python #AI,196,83,Technology
+U004,dev_shivani,Open source software is changing how we build products,2025-08-08,#MachineLearning #Technology,387,107,Technology
+U004,dev_shivani,Just built a new app using React and Node.js,2025-08-12,#Technology #AI,489,89,Technology
+U004,dev_shivani,Just built a new app using React and Node.js,2025-08-19,#AI #DataScience,104,5,Technology
+U004,dev_shivani,Data Science and Big Data are shaping the future,2025-08-24,#Python #Technology,290,55,Technology
+U005,news_with_arjun,Franchise businesses are becoming popular in smaller cities,2025-06-04,#Market #Entrepreneur,225,68,Business
+U005,news_with_arjun,Political analysts are discussing the recent policy changes,2025-06-10,#Election #Government,126,118,Politics
+U005,news_with_arjun,The new business model focuses on subscription revenue,2025-06-15,#Business #Entrepreneur,95,124,Business
+U005,news_with_arjun,Voting rights and reforms are a major topic this year,2025-06-21,#Government #Vote,286,2,Politics
+U005,news_with_arjun,The CEO announced plans for global expansion,2025-06-26,#Entrepreneur #Market,355,121,Business
+U005,news_with_arjun,The stock market showed strong gains today,2025-07-02,#Business #Finance,209,62,Business
+U005,news_with_arjun,A new coalition government was formed after the negotiations,2025-07-09,#Government #Politics,219,140,Politics
+U005,news_with_arjun,Local leaders met to discuss infrastructure funding today,2025-07-15,#Politics #Government,130,59,Politics
+U005,news_with_arjun,The prime minister addressed the nation today,2025-07-20,#Government #Election,100,55,Politics
+U005,news_with_arjun,The annual shareholder meeting revealed strong growth numbers,2025-07-25,#Market #Finance,428,49,Business
+U005,news_with_arjun,The budget session revealed new government priorities,2025-07-31,#Policy #Government,364,136,Politics
+U005,news_with_arjun,The new policy announcement affects many citizens,2025-08-07,#Election #Government,328,125,Politics
+U005,news_with_arjun,The upcoming election is generating a lot of discussion,2025-08-15,#Vote #Government,247,112,Politics
+U005,news_with_arjun,The new policy announcement affects many citizens,2025-08-18,#Government #Politics,422,16,Politics
+U005,news_with_arjun,Parliament session today covered important national issues,2025-08-25,#Vote #Election,78,144,Politics
+U006,traveler_meera,Going to the theater this weekend to watch a play,2025-06-01,#Music #Movies,86,78,Entertainment
+U006,traveler_meera,Startups are adopting AI to improve productivity,2025-06-09,#Business #Entrepreneur,360,103,Business
+U006,traveler_meera,The plot twist in that finale left everyone speechless,2025-06-13,#Entertainment #Movies,457,110,Entertainment
+U006,traveler_meera,The new movie release this weekend looks amazing,2025-06-19,#Movies #Music,393,68,Entertainment
+U006,traveler_meera,The plot twist in that finale left everyone speechless,2025-06-27,#Netflix #Entertainment,94,149,Entertainment
+U006,traveler_meera,The overnight train journey through the hills was scenic,2025-07-03,#Travel #Wanderlust,211,85,Travel
+U006,traveler_meera,Exploring new cities is my favorite way to relax,2025-07-10,#Vacation #Explore,357,126,Travel
+U006,traveler_meera,That hotel had an amazing view of the city,2025-07-16,#Adventure #Travel,47,80,Travel
+U006,traveler_meera,Exploring new cities is my favorite way to relax,2025-07-22,#Wanderlust #Travel,213,13,Travel
+U006,traveler_meera,I am planning a solo trip to explore new cultures,2025-07-28,#Adventure #Wanderlust,391,13,Travel
+U006,traveler_meera,The local street food tour was the highlight of my trip,2025-08-03,#Vacation #Explore,452,124,Travel
+U006,traveler_meera,The mountain village homestay gave such an authentic experience,2025-08-07,#Adventure #Vacation,161,141,Travel
+U006,traveler_meera,Travel photography is such a rewarding hobby,2025-08-12,#Travel #Vacation,238,30,Travel
+U006,traveler_meera,That beach destination had the most beautiful sunset,2025-08-20,#Wanderlust #Explore,214,123,Travel
+U006,traveler_meera,I pre-ordered tickets for the upcoming world tour,2025-08-25,#Music #Entertainment,473,130,Entertainment
+U007,gamer_karthik,That indie game surprised everyone with its story,2025-06-04,#Gaming #Esports,447,39,Gaming
+U007,gamer_karthik,That gaming console launch had huge demand,2025-06-07,#VideoGames #GamerLife,438,84,Gaming
+U007,gamer_karthik,I switched to a healthier lifestyle this year,2025-06-13,#MentalHealth #Health,122,73,Health
+U007,gamer_karthik,Regular checkups help in early diagnosis of diseases,2025-06-20,#Health #MentalHealth,357,76,Health
+U007,gamer_karthik,Artificial Intelligence is transforming every industry,2025-06-27,#MachineLearning #DataScience,222,37,Technology
+U007,gamer_karthik,Virtual reality gaming is becoming more immersive,2025-07-02,#Streaming #Esports,91,20,Gaming
+U007,gamer_karthik,Voice assistants are getting smarter with every update,2025-07-08,#Python #Technology,120,118,Technology
+U007,gamer_karthik,Voice assistants are getting smarter with every update,2025-07-15,#AI #Technology,348,139,Technology
+U007,gamer_karthik,That indie game surprised everyone with its story,2025-07-22,#VideoGames #Streaming,355,64,Gaming
+U007,gamer_karthik,Competitive gaming requires a lot of practice,2025-07-28,#Esports #GamerLife,56,60,Gaming
+U007,gamer_karthik,I love building strategies in that strategy game,2025-08-02,#Streaming #VideoGames,13,101,Gaming
+U007,gamer_karthik,That game soundtrack is honestly better than most movies,2025-08-08,#Gaming #GamerLife,399,58,Gaming
+U007,gamer_karthik,I love building strategies in that strategy game,2025-08-14,#Esports #Streaming,349,35,Gaming
+U007,gamer_karthik,The open world in that game feels incredibly alive,2025-08-21,#Gaming #VideoGames,19,148,Gaming
+U007,gamer_karthik,Playing online multiplayer games with friends is so fun,2025-08-26,#Gaming #VideoGames,384,106,Gaming
+U008,finance_guru_ravi,Cryptocurrency prices have been quite volatile lately,2025-06-04,#Finance #StockMarket,61,24,Finance
+U008,finance_guru_ravi,The new tax filing portal is much easier to use,2025-06-10,#Investing #Crypto,191,138,Finance
+U008,finance_guru_ravi,Music festivals are so much fun to attend,2025-06-16,#Movies #Entertainment,482,71,Entertainment
+U008,finance_guru_ravi,Gold prices went up again this week,2025-06-22,#Investing #Crypto,488,60,Finance
+U008,finance_guru_ravi,The logistics team improved delivery times significantly,2025-06-25,#Finance #Market,205,70,Business
+U008,finance_guru_ravi,Understanding taxes is important for financial planning,2025-07-02,#Crypto #Finance,330,5,Finance
+U008,finance_guru_ravi,I track my monthly expenses using a spreadsheet,2025-07-08,#Investing #Savings,37,141,Finance
+U008,finance_guru_ravi,Saving early for retirement makes a huge difference,2025-07-14,#Investing #StockMarket,405,0,Finance
+U008,finance_guru_ravi,The interest rates announcement affected the market today,2025-07-20,#Investing #StockMarket,58,6,Finance
+U008,finance_guru_ravi,Gold prices went up again this week,2025-07-25,#Investing #StockMarket,91,67,Finance
+U008,finance_guru_ravi,The new digital wallet app has great cashback offers,2025-07-31,#Crypto #Finance,245,114,Finance
+U008,finance_guru_ravi,Entrepreneurship requires patience and persistence,2025-08-06,#Entrepreneur #Startup,374,133,Business
+U008,finance_guru_ravi,The rupee strengthened against the dollar this week,2025-08-15,#Finance #Savings,435,102,Finance
+U008,finance_guru_ravi,Understanding taxes is important for financial planning,2025-08-18,#Crypto #Savings,462,20,Finance
+U008,finance_guru_ravi,The interest rates announcement affected the market today,2025-08-26,#Finance #Investing,321,149,Finance
+U009,healthy_lifestyle_ishaan,The new clinic offers affordable checkups for families,2025-06-03,#Health #Wellness,182,26,Health
+U009,healthy_lifestyle_ishaan,The athlete's comeback after injury is truly inspiring,2025-06-07,#WorldCup #Football,181,142,Sports
+U009,healthy_lifestyle_ishaan,Financial literacy should be taught in schools,2025-06-15,#Crypto #Finance,16,46,Finance
+U009,healthy_lifestyle_ishaan,Vaccination drives are helping control seasonal illness,2025-06-19,#Wellness #Yoga,94,36,Health
+U009,healthy_lifestyle_ishaan,Tennis grand slam season is my favorite time of year,2025-06-26,#Cricket #Fitness,194,107,Sports
+U009,healthy_lifestyle_ishaan,A balanced diet with proteins and vegetables is essential,2025-07-03,#Wellness #Yoga,399,145,Health
+U009,healthy_lifestyle_ishaan,I love the new Netflix series everyone is talking about,2025-07-07,#Netflix #Movies,141,113,Entertainment
+U009,healthy_lifestyle_ishaan,Sports analytics is changing how teams are managed,2025-07-14,#WorldCup #Sports,388,131,Sports
+U009,healthy_lifestyle_ishaan,Fitness trackers help monitor daily health metrics,2025-07-22,#Health #Wellness,271,78,Health
+U009,healthy_lifestyle_ishaan,Hospitals are adopting new technology for patient care,2025-07-25,#Yoga #Health,106,77,Health
+U009,healthy_lifestyle_ishaan,Our sales numbers improved significantly this month,2025-07-31,#Finance #Business,256,110,Business
+U009,healthy_lifestyle_ishaan,Hospitals are adopting new technology for patient care,2025-08-08,#Yoga #Fitness,38,101,Health
+U009,healthy_lifestyle_ishaan,I watched the latest football match yesterday and it was thrilling,2025-08-14,#WorldCup #Cricket,296,109,Sports
+U009,healthy_lifestyle_ishaan,Walking ten thousand steps daily has become a habit,2025-08-18,#MentalHealth #Wellness,209,5,Health
+U009,healthy_lifestyle_ishaan,I joined a local weekend cricket league this season,2025-08-24,#WorldCup #Sports,225,27,Sports
+U010,student_lakshmi,Blockchain technology has many real world use cases,2025-06-03,#DataScience #AI,238,115,Technology
+U010,student_lakshmi,The library has great resources for research projects,2025-06-07,#Exams #Education,316,129,Education
+U010,student_lakshmi,Automated testing has saved me hours of debugging time,2025-06-14,#AI #Technology,166,121,Technology
+U010,student_lakshmi,Exploring new cities is my favorite way to relax,2025-06-20,#Explore #Travel,22,63,Travel
+U010,student_lakshmi,The new game patch fixed most of the bugs,2025-06-27,#Streaming #Esports,192,72,Gaming
+U010,student_lakshmi,Guest lectures from industry experts are always inspiring,2025-07-03,#Exams #Education,35,84,Education
+U010,student_lakshmi,Our college hosted a great hackathon this weekend,2025-07-09,#Study #Exams,372,38,Education
+U010,student_lakshmi,The new classroom technology makes lectures more interactive,2025-07-15,#OnlineLearning #Exams,497,100,Education
+U010,student_lakshmi,Career counseling sessions helped me choose my specialization,2025-07-22,#Education #Exams,331,84,Education
+U010,student_lakshmi,Automated testing has saved me hours of debugging time,2025-07-28,#DataScience #AI,262,92,Technology
+U010,student_lakshmi,Online learning platforms have changed how we study,2025-08-02,#OnlineLearning #Courses,487,124,Education
+U010,student_lakshmi,Studying for my final year project has been intense,2025-08-08,#OnlineLearning #Education,434,25,Education
+U010,student_lakshmi,I passed my certification exam after months of preparation,2025-08-14,#Courses #Education,450,33,Education
+U010,student_lakshmi,Studying for my final year project has been intense,2025-08-19,#OnlineLearning #Courses,371,112,Education
+U010,student_lakshmi,The library has great resources for research projects,2025-08-26,#OnlineLearning #Study,387,114,Education
+U011,cricket_fan_dev,The new movie release this weekend looks amazing,2025-06-03,#WebSeries #Movies,407,37,Entertainment
+U011,cricket_fan_dev,Training hard for the upcoming marathon this year,2025-06-10,#WorldCup #Football,231,1,Sports
+U011,cricket_fan_dev,That celebrity interview was really entertaining,2025-06-13,#Music #Entertainment,399,73,Entertainment
+U011,cricket_fan_dev,Our local team won the championship after ten years,2025-06-22,#Cricket #Football,329,117,Sports
+U011,cricket_fan_dev,The home team dominated possession for the whole match,2025-06-26,#Fitness #Cricket,369,36,Sports
+U011,cricket_fan_dev,I watched the latest football match yesterday and it was thrilling,2025-07-02,#Fitness #Sports,294,106,Sports
+U011,cricket_fan_dev,The athlete's comeback after injury is truly inspiring,2025-07-07,#Cricket #Sports,490,134,Sports
+U011,cricket_fan_dev,Our squad won the ranked match after an intense final round,2025-07-16,#Gaming #GamerLife,24,99,Gaming
+U011,cricket_fan_dev,The new movie release this weekend looks amazing,2025-07-21,#WebSeries #Movies,125,26,Entertainment
+U011,cricket_fan_dev,Studying for my final year project has been intense,2025-07-27,#Education #Exams,418,44,Education
+U011,cricket_fan_dev,I love discovering new artists on my music playlist,2025-08-01,#Entertainment #Music,34,117,Entertainment
+U011,cricket_fan_dev,I go for a run every morning to stay fit,2025-08-06,#Cricket #Football,163,79,Sports
+U011,cricket_fan_dev,Our school team qualified for the state championship,2025-08-12,#WorldCup #Sports,387,48,Sports
+U011,cricket_fan_dev,The underdog team pulled off a stunning upset today,2025-08-20,#Cricket #Sports,65,94,Sports
+U011,cricket_fan_dev,I love watching cricket highlights on weekends,2025-08-26,#WorldCup #Fitness,500,47,Sports
+U012,techie_neha,The new operating system update added some great features,2025-06-04,#MachineLearning #DataScience,488,145,Technology
+U012,techie_neha,Cloud computing with AWS makes deployment so easy,2025-06-09,#Technology #MachineLearning,229,19,Technology
+U012,techie_neha,Understanding compound interest changed my saving habits,2025-06-14,#StockMarket #Savings,493,29,Finance
+U012,techie_neha,Cybersecurity is more important than ever in 2026,2025-06-19,#Technology #DataScience,136,66,Technology
+U012,techie_neha,I set up automatic transfers to my savings account,2025-06-26,#StockMarket #Crypto,64,34,Finance
+U012,techie_neha,Our finance club discussed retirement planning strategies today,2025-07-03,#Crypto #Finance,343,88,Finance
+U012,techie_neha,Diversifying investments reduces overall risk,2025-07-08,#StockMarket #Investing,408,92,Finance
+U012,techie_neha,ChatGPT and generative AI are amazing tools for developers,2025-07-14,#Python #DataScience,406,126,Technology
+U012,techie_neha,5G networks are enabling so many new mobile applications,2025-07-22,#DataScience #MachineLearning,413,141,Technology
+U012,techie_neha,Just built a new app using React and Node.js,2025-07-28,#AI #MachineLearning,369,122,Technology
+U012,techie_neha,The tech conference this year had some incredible keynote talks,2025-08-01,#Technology #AI,499,81,Technology
+U012,techie_neha,Quantum computing research is progressing rapidly,2025-08-07,#Technology #MachineLearning,451,141,Technology
+U012,techie_neha,Cybersecurity is more important than ever in 2026,2025-08-12,#Python #Technology,427,31,Technology
+U012,techie_neha,The new laptop I bought has amazing specifications,2025-08-20,#Python #DataScience,480,57,Technology
+U012,techie_neha,AI coding assistants are really speeding up my development workflow,2025-08-26,#MachineLearning #AI,102,141,Technology
+U013,wanderer_sam,Drinking enough water daily improves overall health,2025-06-03,#Wellness #Yoga,206,33,Health
+U013,wanderer_sam,Regular checkups help in early diagnosis of diseases,2025-06-10,#Wellness #Fitness,64,68,Health
+U013,wanderer_sam,Mental health awareness is so important nowadays,2025-06-16,#Wellness #MentalHealth,129,40,Health
+U013,wanderer_sam,I love attending workshops on programming and AI,2025-06-22,#OnlineLearning #Study,257,78,Education
+U013,wanderer_sam,Hospitals are adopting new technology for patient care,2025-06-26,#Yoga #MentalHealth,112,149,Health
+U013,wanderer_sam,The mountains looked breathtaking during our hike,2025-07-04,#Explore #Wanderlust,148,137,Travel
+U013,wanderer_sam,Exploring new cities is my favorite way to relax,2025-07-09,#Wanderlust #Vacation,374,93,Travel
+U013,wanderer_sam,Hospitals are adopting new technology for patient care,2025-07-15,#Health #Fitness,285,73,Health
+U013,wanderer_sam,I tried scuba diving for the first time on vacation,2025-07-19,#Wanderlust #Explore,67,24,Travel
+U013,wanderer_sam,Camping in the forest was a peaceful experience,2025-07-26,#Adventure #Explore,103,130,Travel
+U013,wanderer_sam,The mountains looked breathtaking during our hike,2025-08-01,#Travel #Adventure,367,85,Travel
+U013,wanderer_sam,Drinking enough water daily improves overall health,2025-08-08,#Yoga #Fitness,478,81,Health
+U013,wanderer_sam,I finally visited the ancient ruins I always dreamed about,2025-08-15,#Explore #Adventure,364,144,Travel
+U013,wanderer_sam,Planning a backpacking trip across Europe this summer,2025-08-18,#Explore #Adventure,215,149,Travel
+U013,wanderer_sam,I am learning basic phrases before my trip abroad,2025-08-26,#Travel #Wanderlust,497,148,Travel
+U014,cinema_lover_riya,The soundtrack of that movie is stuck in my head,2025-06-04,#WebSeries #Music,164,122,Entertainment
+U014,cinema_lover_riya,Our sales numbers improved significantly this month,2025-06-10,#Business #Entrepreneur,421,88,Business
+U014,cinema_lover_riya,Our startup just closed a new funding round,2025-06-15,#Finance #Business,475,113,Business
+U014,cinema_lover_riya,The prime minister addressed the nation today,2025-06-21,#Vote #Government,72,27,Politics
+U014,cinema_lover_riya,Streaming my gameplay has become a fun hobby,2025-06-26,#Gaming #Esports,28,25,Gaming
+U014,cinema_lover_riya,I love discovering new artists on my music playlist,2025-07-02,#Entertainment #Movies,4,140,Entertainment
+U014,cinema_lover_riya,The open world in that game feels incredibly alive,2025-07-08,#GamerLife #Streaming,389,73,Gaming
+U014,cinema_lover_riya,That podcast episode with the director was really insightful,2025-07-14,#Movies #Netflix,275,9,Entertainment
+U014,cinema_lover_riya,The graphics in this new game are stunning,2025-07-22,#Gaming #GamerLife,97,74,Gaming
+U014,cinema_lover_riya,That game soundtrack is honestly better than most movies,2025-07-27,#Streaming #Gaming,147,116,Gaming
+U014,cinema_lover_riya,I finally unlocked the secret ending after hours of grinding,2025-08-02,#Esports #GamerLife,100,28,Gaming
+U014,cinema_lover_riya,The cast reunion for the anniversary special was heartwarming,2025-08-07,#Entertainment #WebSeries,9,86,Entertainment
+U014,cinema_lover_riya,I finally completed the main storyline of that game,2025-08-15,#Esports #GamerLife,265,83,Gaming
+U014,cinema_lover_riya,The remake of the classic film got mixed reviews,2025-08-19,#Movies #Music,246,82,Entertainment
+U014,cinema_lover_riya,The gaming community around that title is amazing,2025-08-26,#Esports #GamerLife,490,84,Gaming
+U015,policy_watch_kabir,Preparing for competitive exams needs a solid schedule,2025-06-01,#Courses #Study,350,52,Education
+U015,policy_watch_kabir,The debate club practice session was really engaging today,2025-06-10,#Study #Education,69,131,Education
+U015,policy_watch_kabir,I passed my certification exam after months of preparation,2025-06-13,#Study #Exams,204,65,Education
+U015,policy_watch_kabir,Personal budgeting apps really help track expenses,2025-06-21,#Finance #Crypto,360,16,Finance
+U015,policy_watch_kabir,Learning a new language has been a great experience,2025-06-27,#Study #Education,211,46,Education
+U015,policy_watch_kabir,Nutrition plays a key role in overall wellbeing,2025-07-04,#MentalHealth #Yoga,194,20,Health
+U015,policy_watch_kabir,I passed my certification exam after months of preparation,2025-07-07,#OnlineLearning #Exams,93,137,Education
+U015,policy_watch_kabir,Government announced new reforms for the economy,2025-07-13,#Policy #Election,154,118,Politics
+U015,policy_watch_kabir,I passed my certification exam after months of preparation,2025-07-20,#Study #OnlineLearning,237,88,Education
+U015,policy_watch_kabir,The prime minister addressed the nation today,2025-07-28,#Election #Vote,316,4,Politics
+U015,policy_watch_kabir,Parliament session today covered important national issues,2025-08-03,#Election #Vote,308,12,Politics
+U015,policy_watch_kabir,The new policy announcement affects many citizens,2025-08-07,#Politics #Vote,278,55,Politics
+U015,policy_watch_kabir,That documentary about the music industry was eye opening,2025-08-14,#WebSeries #Music,297,82,Entertainment
+U015,policy_watch_kabir,Government announced new reforms for the economy,2025-08-21,#Vote #Policy,155,70,Politics
+U015,policy_watch_kabir,A new coalition government was formed after the negotiations,2025-08-27,#Policy #Politics,26,88,Politics
+U016,market_maven_asha,The stock market showed strong gains today,2025-06-01,#Startup #Market,384,122,Business
+U016,market_maven_asha,Customer retention strategies are our focus this quarter,2025-06-08,#Startup #Entrepreneur,284,82,Business
+U016,market_maven_asha,Venture capital funding in the region is increasing steadily,2025-06-15,#Finance #Market,186,131,Business
+U016,market_maven_asha,The acquisition deal is expected to close next month,2025-06-20,#Entrepreneur #Finance,191,80,Business
+U016,market_maven_asha,Emergency funds are so important for financial stability,2025-06-25,#Investing #Savings,135,141,Finance
+U016,market_maven_asha,The e-commerce industry continues to grow rapidly,2025-07-02,#Finance #Startup,170,58,Business
+U016,market_maven_asha,Financial literacy should be taught in schools,2025-07-09,#Crypto #StockMarket,392,125,Finance
+U016,market_maven_asha,Our team closed a major client deal this week,2025-07-15,#Entrepreneur #Startup,88,35,Business
+U016,market_maven_asha,Venture capital funding in the region is increasing steadily,2025-07-19,#Business #Market,485,12,Business
+U016,market_maven_asha,Our brand partnership announcement got great media coverage,2025-07-26,#Startup #Business,6,55,Business
+U016,market_maven_asha,Gold prices went up again this week,2025-08-03,#Finance #Crypto,10,1,Finance
+U016,market_maven_asha,The insurance policy renewal is due next month,2025-08-08,#Finance #Savings,276,73,Finance
+U016,market_maven_asha,Our finance club discussed retirement planning strategies today,2025-08-12,#Crypto #Investing,472,24,Finance
+U016,market_maven_asha,Financial literacy should be taught in schools,2025-08-20,#Investing #StockMarket,138,101,Finance
+U016,market_maven_asha,Understanding compound interest changed my saving habits,2025-08-25,#Crypto #Investing,155,20,Finance
+U017,fit_and_fine_omar,That hotel had an amazing view of the city,2025-06-03,#Vacation #Travel,29,25,Travel
+U017,fit_and_fine_omar,Peer tutoring has really improved my understanding of calculus,2025-06-09,#Courses #Study,17,69,Education
+U017,fit_and_fine_omar,I love trying local food whenever I travel,2025-06-16,#Explore #Wanderlust,97,149,Travel
+U017,fit_and_fine_omar,I finally visited the ancient ruins I always dreamed about,2025-06-19,#Explore #Vacation,44,68,Travel
+U017,fit_and_fine_omar,Walking ten thousand steps daily has become a habit,2025-06-27,#Fitness #MentalHealth,186,27,Health
+U017,fit_and_fine_omar,Vaccination drives are helping control seasonal illness,2025-07-03,#MentalHealth #Wellness,54,33,Health
+U017,fit_and_fine_omar,Fitness trackers help monitor daily health metrics,2025-07-07,#MentalHealth #Yoga,15,22,Health
+U017,fit_and_fine_omar,I started a new yoga routine this month,2025-07-16,#Yoga #Wellness,8,74,Health
+U017,fit_and_fine_omar,I started a new yoga routine this month,2025-07-20,#Yoga #Fitness,352,97,Health
+U017,fit_and_fine_omar,Doctors recommend regular exercise for a healthy heart,2025-07-28,#Wellness #Yoga,76,16,Health
+U017,fit_and_fine_omar,Doctors recommend regular exercise for a healthy heart,2025-08-03,#MentalHealth #Wellness,402,19,Health
+U017,fit_and_fine_omar,Meditation has helped me manage stress better,2025-08-09,#MentalHealth #Fitness,56,34,Health
+U017,fit_and_fine_omar,Hospitals are adopting new technology for patient care,2025-08-14,#Wellness #MentalHealth,227,85,Health
+U017,fit_and_fine_omar,Physical therapy has really helped with my recovery,2025-08-20,#Yoga #Fitness,166,51,Health
+U017,fit_and_fine_omar,A balanced diet with proteins and vegetables is essential,2025-08-26,#MentalHealth #Wellness,378,125,Health
+U018,code_with_zara,The open world in that game feels incredibly alive,2025-06-04,#Streaming #Gaming,497,84,Gaming
+U018,code_with_zara,The new game release this month looks incredible,2025-06-08,#Gaming #VideoGames,263,132,Gaming
+U018,code_with_zara,Streaming my gameplay has become a fun hobby,2025-06-16,#GamerLife #VideoGames,239,150,Gaming
+U018,code_with_zara,The new game release this month looks incredible,2025-06-21,#GamerLife #Gaming,214,21,Gaming
+U018,code_with_zara,Automated testing has saved me hours of debugging time,2025-06-27,#Python #MachineLearning,177,116,Technology
+U018,code_with_zara,I love building strategies in that strategy game,2025-07-04,#GamerLife #Gaming,371,115,Gaming
+U018,code_with_zara,The new laptop I bought has amazing specifications,2025-07-07,#AI #DataScience,436,87,Technology
+U018,code_with_zara,The graphics in this new game are stunning,2025-07-14,#Esports #Streaming,171,143,Gaming
+U018,code_with_zara,Quantum computing research is progressing rapidly,2025-07-20,#Python #Technology,97,110,Technology
+U018,code_with_zara,Automated testing has saved me hours of debugging time,2025-07-28,#DataScience #Python,305,109,Technology
+U018,code_with_zara,I am experimenting with computer vision for a college project,2025-08-02,#Python #DataScience,387,16,Technology
+U018,code_with_zara,5G networks are enabling so many new mobile applications,2025-08-08,#Python #MachineLearning,102,117,Technology
+U018,code_with_zara,Voice assistants are getting smarter with every update,2025-08-15,#Technology #MachineLearning,314,100,Technology
+U018,code_with_zara,Blockchain technology has many real world use cases,2025-08-19,#MachineLearning #Technology,418,76,Technology
+U018,code_with_zara,I upgraded my setup with a mechanical keyboard for gaming,2025-08-24,#Esports #VideoGames,124,78,Gaming
+U019,bookworm_tara,Online learning platforms have changed how we study,2025-06-04,#OnlineLearning #Study,283,130,Education
+U019,bookworm_tara,This online tutorial explained machine learning so well,2025-06-07,#Exams #Courses,391,112,Education
+U019,bookworm_tara,Our gym group is training for the city marathon,2025-06-13,#Football #Sports,232,67,Sports
+U019,bookworm_tara,Learning a new language has been a great experience,2025-06-20,#Study #Education,109,150,Education
+U019,bookworm_tara,The rupee strengthened against the dollar this week,2025-06-26,#Crypto #Investing,403,52,Finance
+U019,bookworm_tara,Gold prices went up again this week,2025-07-02,#Savings #StockMarket,167,74,Finance
+U019,bookworm_tara,My professor explained data mining concepts really well,2025-07-08,#Courses #Education,494,105,Education
+U019,bookworm_tara,I love discovering new artists on my music playlist,2025-07-14,#Music #Netflix,366,82,Entertainment
+U019,bookworm_tara,I completed my first month of strength training today,2025-07-22,#Fitness #Wellness,194,115,Health
+U019,bookworm_tara,Guest lectures from industry experts are always inspiring,2025-07-27,#Education #Study,357,94,Education
+U019,bookworm_tara,My thesis advisor gave really valuable feedback today,2025-07-31,#Exams #Education,376,117,Education
+U019,bookworm_tara,Career counseling sessions helped me choose my specialization,2025-08-09,#Exams #Education,113,109,Education
+U019,bookworm_tara,I really enjoyed the standup comedy special last night,2025-08-13,#WebSeries #Netflix,291,124,Entertainment
+U019,bookworm_tara,Artificial Intelligence is transforming every industry,2025-08-18,#AI #Technology,65,40,Technology
+U019,bookworm_tara,I just enrolled in an online course on data science,2025-08-25,#Study #OnlineLearning,453,77,Education
+U020,startup_vikram,The annual shareholder meeting revealed strong growth numbers,2025-06-04,#Business #Startup,181,54,Business
+U020,startup_vikram,Coding in Python every day is improving my skills,2025-06-08,#DataScience #Technology,46,25,Technology
+U020,startup_vikram,Entrepreneurship requires patience and persistence,2025-06-15,#Market #Entrepreneur,495,109,Business
+U020,startup_vikram,The company announced a major merger today,2025-06-19,#Startup #Finance,129,141,Business
+U020,startup_vikram,Remote work policies are reshaping corporate office culture,2025-06-26,#Business #Finance,267,130,Business
+U020,startup_vikram,Corporate strategy meetings happen every Monday,2025-07-02,#Finance #Business,255,98,Business
+U020,startup_vikram,Our team closed a major client deal this week,2025-07-07,#Market #Business,186,81,Business
+U020,startup_vikram,The annual shareholder meeting revealed strong growth numbers,2025-07-14,#Entrepreneur #Finance,392,120,Business
+U020,startup_vikram,I upgraded my computer with a faster GPU for deep learning,2025-07-21,#AI #DataScience,112,10,Technology
+U020,startup_vikram,Reducing screen time before bed improved my sleep a lot,2025-07-28,#Wellness #MentalHealth,361,102,Health
+U020,startup_vikram,Venture capital funding in the region is increasing steadily,2025-08-02,#Market #Startup,44,79,Business
+U020,startup_vikram,Marketing strategy for our new product launch is ready,2025-08-09,#Startup #Finance,302,16,Business
+U020,startup_vikram,The e-commerce industry continues to grow rapidly,2025-08-13,#Startup #Business,46,111,Business
+U020,startup_vikram,Franchise businesses are becoming popular in smaller cities,2025-08-20,#Market #Business,343,44,Business
+U020,startup_vikram,Customer retention strategies are our focus this quarter,2025-08-25,#Startup #Business,256,88,Business
